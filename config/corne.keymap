@@ -117,7 +117,7 @@
 
         combo_sys_layer {
             timeout-ms = <50>;
-            bindings = <&kp to 4>;
+            bindings = <&to 4>;
             key-positions = <36 41>;
             layers = <0>;
         };
@@ -125,7 +125,7 @@
         
         combo_1hand_layer {
             timeout-ms = <50>;
-            bindings = <&kp to 5>;
+            bindings = <&to 5>;
             key-positions = <28 29>;
             layers = <0>;
         };
