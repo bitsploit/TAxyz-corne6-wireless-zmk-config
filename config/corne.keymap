@@ -149,7 +149,7 @@
     
     
     behaviors {
-        ht_tp: hold_tap_tp {
+        ht_tp: ht_tp {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
@@ -180,7 +180,7 @@
 
 &kp AT     &kp A   &mt LGUI S  &mt LALT D   &mt LCTRL F   &lt 3 G          &kp H      &mt RCTRL J    &mt RALT K   &mt RGUI L                &kp SEMI   &kp MINUS
 
-&kp HASH   &kp Z   &kp X       &kp C        &kp V         &kp B            &kp N      &kp M          &kp COMMA    &ht_tp macro_dotcom DOT  &kp FSLH   &kp BSLH
+&kp HASH   &kp Z   &kp X       &kp C        &kp V         &kp B            &kp N      &kp M          &kp COMMA    &kp DOT  &kp FSLH   &kp BSLH
 
                                &mo 1        &kp LSHFT     &kp RET          &kp BSPC   &kp SPACE      &mo 2
             >;
