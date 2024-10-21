@@ -30,6 +30,16 @@
                 ;
         };
     };
+    
+    macros {
+        dotcom: dotcom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DOT &kp C &kp O &kp M>
+                ;
+        };
+    };
 };
     
     
