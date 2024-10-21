@@ -36,7 +36,6 @@
     
 / {
 
-    /*
     combos {
         compatible = "zmk,combos";
 
@@ -48,21 +47,21 @@
         
         combo_copy {
             timeout-ms = <50>;
-            bindings = <&macro_copy>;
+            bindings = <&kp LC(C)>;
             key-positions = <26 27 28>;
             layers = <0 5>;
         };
 
         combo_paste {
             timeout-ms = <50>;
-            bindings = <&macro_paste>;
+            bindings = <&kp LC(V)>;
             key-positions = <27 28>;
             layers = <0 5>;
         };
 
         combo_cut {
             timeout-ms = <50>;
-            bindings = <&macro_cut>;
+            bindings = <&kp LC(X)>;
             key-positions = <26 28>;
             layers = <0 5>;
         };
@@ -92,10 +91,10 @@
         };  
         
     };
-    */
     
     
-    /*
+    
+    
     behaviors {
         ht_tp: ht_tp {
             compatible = "zmk,behavior-hold-tap";
@@ -107,11 +106,8 @@
         };
         
     };
-    */
     
-    
-    
-    
+
 
     keymap {
         compatible = "zmk,keymap";
