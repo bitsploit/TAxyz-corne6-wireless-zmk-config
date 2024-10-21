@@ -208,7 +208,7 @@
 
 &none   &none   &none   &none   &none      &none           &none   &ht_tp F1 N1    &ht_tp F2 N2    &ht_tp F3 N3    &ht_tp F10 PLUS  &none 
                              
-                        &none   &kp LALT   &kp LCTRL       &none   &ht_tp EQUAL N0     &ht_tp BSLH DOT
+                        &none   &kp LALT   &kp LCTRL       &none   &ht_tp EQUAL N0     &ht_tp FSLH DOT
             >;
         };
         
