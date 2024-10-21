@@ -185,7 +185,9 @@
                                &mo 1        &kp LSHFT     &kp RET          &kp BSPC   &kp SPACE      &mo 2
             >;
         };
-
+        
+        
+/*        
 
         left_layer {
             // -----------------------------------------------------------------------------------------
@@ -258,7 +260,6 @@
             bindings = <
 
 
-/*
 &none   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4          &none    &none    &kp C_BRI_UP    &kp C_BRI_DN    &none    &none
 
 &none   &bt BT_DISC 0   &bt BT_DISC 1   &bt BT_DISC 2   &bt BT_DISC 3   &bt BT_DISC 4         &none    &kp C_MUTE    &kp C_VOL_UP    &kp C_VOL_DN    &none    &none
@@ -266,18 +267,7 @@
 &none   &none  &none     &out OUT_USB    &out OUT_BLE    &out OUT_TOG          &kp C_RW    &kp C_PREV    &kp C_PLAY    &kp C_NEXT    &kp C_FF    &none
 
                                         &none           &none           &none                 &to 0    &none    &kp C_STOP
-*/     
-     
-            
-&none   &none   &none   &none   &none      &none           &none   &ht_tp F7 N7    &ht_tp F8 N8    &ht_tp F9 N9    &ht_tp F12 STAR   &none 
 
-&none   &none   &none   &none   &none      &none           &none   &ht_tp F4 N4    &ht_tp F5 N5    &ht_tp F6 N6    &ht_tp F11 MINUS   &none 
-
-&none   &none   &none   &none   &none      &none           &none   &ht_tp F1 N1    &ht_tp F2 N2    &ht_tp F3 N3    &ht_tp F10 PLUS  &none 
-                             
-                        &none   &kp LALT   &kp LCTRL       &none   &ht_tp EQUAL N0     &ht_tp BSLH DOT            
-            
-            
             
             >;
         };
@@ -293,7 +283,7 @@
 
             bindings = <
 
-/*
+
             &none    &kp BSPC   &kp N7    &kp N8    &kp N9    &kp FSLH        &none    &none    &none    &none    &none    &none
              
             &none    &SPACE     &kp N4    &kp N5    &kp N6    &kp ASTRK       &none    &none    &none    &none    &none    &none
@@ -301,21 +291,8 @@
             &none    &kp DOT    &kp N1    &kp N2    &kp N3    &kp MINUS       &none    &none    &none    &none    &none    &none
 
                                           &kp N0    &kp RET   &kp PLUS        &to 0    &none    &none
-
-*/     
      
-            
-&none   &none   &none   &none   &none      &none           &none   &ht_tp F7 N7    &ht_tp F8 N8    &ht_tp F9 N9    &ht_tp F12 STAR   &none 
-
-&none   &none   &none   &none   &none      &none           &none   &ht_tp F4 N4    &ht_tp F5 N5    &ht_tp F6 N6    &ht_tp F11 MINUS   &none 
-
-&none   &none   &none   &none   &none      &none           &none   &ht_tp F1 N1    &ht_tp F2 N2    &ht_tp F3 N3    &ht_tp F10 PLUS  &none 
-                             
-                        &none   &kp LALT   &kp LCTRL       &none   &ht_tp EQUAL N0     &ht_tp BSLH DOT            
-                
-            
-            
-            
+*/
             
             >;
         };
