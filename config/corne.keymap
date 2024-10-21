@@ -234,14 +234,14 @@
         };
         
        
- /*
+ 
         onehand_layer {
             // -------------------------------------------------------------------------------------------------
             // |       | BSPC |  7  |  8  |  9  |  /  |   |             |      |        |        |      |      |
             // |       |      |  4  |  5  |  6  |  *  |   |             |      |        |        |      |      |
             // |       |  .   |  1  |  2  |  2  |  -  |   |             |      |        |        |      |      |
             //                      |  0  | ENT |  +  |   | Tog Default |      |        |
-
+/*
             bindings = <
 
 
@@ -254,10 +254,25 @@
                                           &kp N0    &kp RET   &kp PLUS        &to 0    &none    &none
      
             >;
+            
+  */          
+            
+            bindings = <
+
+
+            &none   &none   &none   &none   &none      &none        &none    &none    &none    &none    &none    &none
+             
+            &none   &none   &none   &none   &none      &none        &none    &none    &none    &none    &none    &none
+            
+            &none   &none   &none   &none   &none      &none       &none    &none    &none    &none    &none    &none
+
+                                          &kp N0    &kp RET   &kp PLUS        &to 0    &none    &none
+     
+            >;
                   
         };
         
-*/
+
         
         
     };
