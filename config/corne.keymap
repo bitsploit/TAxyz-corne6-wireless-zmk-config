@@ -21,19 +21,22 @@
         macro_copy: macro_copy {
             compatible = "zmk, behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp LCTRL>,
-                <&macro_tap &kp C>,
-                <&macro_release &kp LCTRL>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCTRL>
+                ;
         };
 
+\*
         macro_cut: macro_cut {
             compatible = "zmk, behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp LCTRL>,
-                <&macro_tap &kp X>,
-                <&macro_release &kp LCTRL>;
+            bindings 
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LCTRL>
+                ;
         };
 
         macro_paste: macro_paste {
@@ -73,7 +76,7 @@
                 <&macro_tap &kp O>,
                 <&macro_tap &kp M>;
         };
-
+*/
 
     };
     
