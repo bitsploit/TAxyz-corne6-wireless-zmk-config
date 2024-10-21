@@ -97,7 +97,14 @@
             bindings = <&caps_word>;
             key-positions = <25 26>;
             layers = <0>;
-        };  
+        };
+        
+        combo_dotcom {
+            timeout-ms = <50>;
+            bindings = <&dotcom>;
+            key-positions = <32 33>;
+            layers = <0>;
+        }; 
         
     };
     
@@ -130,11 +137,11 @@
 
             bindings = <
 
-&kp EXCL   &kp Q   &kp W       &kp E        &kp R         &kp T            &kp Y      &kp U          &kp I        &kp O                     &kp P      &kp PLUS
+&kp EXCL   &kp Q   &kp W       &kp E        &kp R         &kp T            &kp Y      &kp U          &kp I        &kp O        &kp P      &kp PLUS
 
-&kp AT     &kp A   &mt LGUI S  &mt LALT D   &mt LCTRL F   &lt 3 G          &kp H      &mt RCTRL J    &mt RALT K   &mt RGUI L                &kp SEMI   &kp MINUS
+&kp AT     &kp A   &mt LGUI S  &mt LALT D   &mt LCTRL F   &lt 3 G          &kp H      &mt RCTRL J    &mt RALT K   &mt RGUI L   &kp SEMI   &kp MINUS
 
-&kp HASH   &kp Z   &kp X       &kp C        &kp V         &kp B            &kp N      &kp M          &kp COMMA    &ht_tp dotcom DOT  &kp FSLH   &kp BSLH
+&kp HASH   &kp Z   &kp X       &kp C        &kp V         &kp B            &kp N      &kp M          &kp COMMA    &kp DOT      &kp FSLH   &kp BSLH
 
                                &mo 1        &kp LSHFT     &kp RET          &kp BSPC   &kp SPACE      &mo 2
             >;
