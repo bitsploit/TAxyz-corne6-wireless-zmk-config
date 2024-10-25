@@ -277,7 +277,7 @@
 
 &kp EXCL   &kp Q   &kp W       &kp E        &kp R         &kp T            &kp Y      &kp U          &kp I        &kp O        &kp P      &kp PLUS
 
-&kp AT     &kp A   &mt LGUI S  &mt LALT D   &mt LCTRL F   &lt 3 G          &kp H      &mt RCTRL J    &mt RALT K   &mt RGUI L   &kp SEMI   &kp MINUS
+&kp AT     &kp A   &lhm LGUI S  &lhm LALT D   &lhm LCTRL F   &lt 3 G          &kp H      &rhm RCTRL J    &rhm RALT K   &rhm RGUI L   &kp SEMI   &kp MINUS
 
 &kp HASH   &kp Z   &kp X       &kp C        &kp V         &kp B            &kp N      &kp M          &kp COMMA    &kp DOT      &kp FSLH   &kp BSLH
 
