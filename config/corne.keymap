@@ -44,8 +44,8 @@
                 ;
         };
         
-        
-        left_hrm: lhm {
+        // Left Home Row Mod Macro
+        lhm: lhm {
             flavor = "balanced";
             tapping-term-ms = <280>;
             require-prior-idle-ms = <150>;
@@ -55,7 +55,8 @@
         };
         
         
-        right_hrm: rhm {
+        // Right Home Row Mod Macro
+        rhm: rhm {
             flavor = "balanced";
             tapping-term-ms = <280>;
             require-prior-idle-ms = <150>;
