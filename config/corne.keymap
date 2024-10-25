@@ -43,7 +43,8 @@
                 = <&macro_tap &kp DOT &kp C &kp O &kp M>
                 ;
         };
-       
+
+/*       
         // Left Home Row Mod Macro
         lhm: lhm {
             compatible = "zmk,behavior-macro";
@@ -66,7 +67,7 @@
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
         };
-
+*/
  
     };
 };
