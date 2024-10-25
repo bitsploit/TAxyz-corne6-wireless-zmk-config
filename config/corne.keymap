@@ -106,6 +106,20 @@
             bindings = <&dotcom>;
             key-positions = <32 33>;
             layers = <0>;
+        };
+        
+        combo_CTRL_ALT_DEL {
+            timeout-ms = <50>;
+            bindings = <&kp LC(LA(DEL))>;
+            key-positions = <39 40 41>;
+            layers = <0>;
+        };
+        
+        combo_LOCK_SCREEN{
+            timeout-ms = <50>;
+            bindings = <&kp LG(L)>;
+            key-positions = <36 37 38>;
+            layers = <0>;
         }; 
         
     };
@@ -126,16 +140,22 @@
     };
     
 
+    &mt {
+        tapping-term-ms = <400>;
+    };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
+        
+            display-name = "QWERTY";
+            
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            // |   !  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  +   |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  -   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  \   |
+            //                | left | RET | LSHIFT |   | BSPC | SPACE  | right |
 
             bindings = <
 
@@ -145,7 +165,7 @@
 
 &kp HASH   &kp Z   &kp X       &kp C        &kp V         &kp B            &kp N      &kp M          &kp COMMA    &kp DOT      &kp FSLH   &kp BSLH
 
-                               &mo 1        &kp LSHFT     &kp RET          &kp BSPC   &kp SPACE      &mo 2
+                               &mo 1        &kp RET       &sk LSHFT        &kp BSPC   &kp SPACE      &mo 2
             >;
         };
         
@@ -153,6 +173,9 @@
        
 
         left_layer {
+        
+            display-name = "NAV / SYM";
+        
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -167,13 +190,16 @@
 
 &none  &kp PAUSE_BREAK   &kp PSCRN        &kp INS            &kp BSPC          &kp DEL          &kp LBKT   &kp RBKT    &kp PIPE   &kp TILDE   &kp GRAVE  &none
                              
-                                          &none              &none             &none            &kp RET    &kp RSHFT   &kp RALT
+                                          &none              &none             &none            &kp RET    &sk RSHFT   &sk RALT
             >;
         };
         
         
         
         right_layer {
+        
+            display-name = "VOL / SYM";
+        
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -194,6 +220,9 @@
         
        
         num_layer {
+        
+            display-name = "NUM / FUNC";        
+        
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -214,6 +243,9 @@
         
          
         sys_layer {
+        
+            display-name = "SYSTEM";        
+        
             // ---------------------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |             |      |   BRI UP   | BRI DN |      |      |
             // | CTRL |     |     |     |     |     |   |             | MUTE |   VOL UP   | VOL DN |      |      |
@@ -238,6 +270,9 @@
        
  
         onehand_layer {
+        
+            display-name = "ONE HAND";        
+        
             // -------------------------------------------------------------------------------------------------
             // |       | BSPC |  7  |  8  |  9  |  /  |   |             |      |        |        |      |      |
             // |       |      |  4  |  5  |  6  |  *  |   |             |      |        |        |      |      |
