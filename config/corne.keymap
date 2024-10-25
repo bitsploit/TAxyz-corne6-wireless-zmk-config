@@ -22,7 +22,6 @@
 
 
 
-
 / {
     macros {
         zed_em_kay: zed_em_kay {
@@ -210,6 +209,54 @@
             layers = <0>;
         };
         
+        combo_AT{
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp AT>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
+        
+        combo_HASH{
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp HASH>;
+            key-positions = <3 4>;
+            layers = <0>;
+        };
+        
+        combo_AMPS{
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp AMPS>;
+            key-positions = <14 15>;
+            layers = <0>;
+        };
+        
+        combo_EXCL{
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp EXCL>;
+            key-positions = <13 14>;
+            layers = <0>;
+        };
+        
+        combo_DASH{
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp MINUS>;
+            key-positions = <9 10>;
+            layers = <0>;
+        };
+        
+        combo_SQT{
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp SQT>;
+            key-positions = <21 22>;
+            layers = <0>;
+        };
+        
         combo_numPLUS{
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
@@ -276,11 +323,11 @@
 
             bindings = <
 
-&kp EXCL   &kp Q   &kp W       &kp E        &kp R         &kp T            &kp Y      &kp U          &kp I        &kp O        &kp P      &kp PLUS
+&kp EXCL   &kp Q   &kp W       &kp E        &kp R         &mt LGUI T       &mt RGUI Y      &kp U     &kp I        &kp O        &kp P      &kp PLUS
 
-&kp AT     &kp A   &mt LGUI S  &mt LALT D   &mt LCTRL F   &lt 3 G          &kp H      &mt RCTRL J    &mt RALT K   &mt RGUI L   &kp SEMI   &kp MINUS
+&kp AT     &kp A   &kp S       &kp D        &kp F         &mt LCTRL G      &mt RCTRL H     &kp J     &kp K        &kp L        &kp SEMI   &kp MINUS
 
-&kp HASH   &kp Z   &kp X       &kp C        &kp V         &kp B            &kp N      &kp M          &kp COMMA    &kp DOT      &kp FSLH   &kp BSLH
+&kp HASH   &kp Z   &kp X       &kp C        &lt 3 V       &mt LALT B       &mt RALT N      &kp M     &kp COMMA    &kp DOT      &kp FSLH   &kp BSLH
 
                                &mo 1        &kp RET       &sk LSHFT        &kp BSPC   &kp SPACE      &mo 2
             >;
