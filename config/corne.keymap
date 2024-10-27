@@ -20,8 +20,9 @@
 };
 
 &mt {
-    tapping-term-ms = <400>;
+    tapping-term-ms = <500>;
     flavor = "balanced";
+    require-prior-idle-ms = <125>;
 };
 
 / {
