@@ -19,8 +19,9 @@
     continue-list = <UNDERSCORE MINUS>;
 };
 
-
-
+&mt {
+    tapping-term-ms = <400>;
+};
 
 / {
     macros {
